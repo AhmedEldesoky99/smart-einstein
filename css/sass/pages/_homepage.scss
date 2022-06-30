@@ -1,0 +1,123 @@
+/* start slider */
+.slider{
+    blockquote {
+        font:{
+            size:26px;
+            weight:500;
+            style:italic;
+            family:arial ,tahoma;
+        }
+        color: #a7a7a7;
+        margin: 20px auto;
+        line-height: 1.6;
+        text-align: center;
+        width:80%;
+    }
+    img {
+        max-width: 100%;
+    }
+    .bullets{
+        text-align: center;
+        margin-bottom: 80px;
+        li {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $textColor;
+            border-radius:50%;
+            border:2px solid $textColor;
+            cursor:pointer;
+            &.active,&:hover
+            {
+                background-color: #fff;
+                border:2px solid #000;
+            }
+        }
+    }
+}
+/* end slider */
+/* start servies*/
+.services .service-box{
+    @media #{$minMeduim}{
+        float: $float-left;
+        width:(100% /3);
+        &:not(:last-of-type){
+            padding: 0 20px;
+        }
+    }
+    @media #{$maxMobile}{
+        i{
+            display: block;
+        }
+    }
+    .service-desc{
+        color:$textColor;
+    }
+    .link{
+        color:$mainColor;
+        text-decoration: none;
+    }
+}
+/* end servies*/
+/* start our players*/
+.ourplayers .ourplayers-box{
+    @media #{$maxMobile}{
+        width:100%;
+        text-align: center;
+        margin-bottom: 40px;
+
+    }
+    @media #{$minSmall}{
+        width:(100% /2);
+        float: $float-left;
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 0 30px;
+    }
+    @media #{$minLarge}{
+        width:(100% /4);
+        text-align: left;
+    }
+    
+    img{
+        border-radius: 20px;
+        max-width: 100%;
+    }
+    .ourplayer-title {
+        color:#DDD;
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: -16px;
+        span{
+            font-weight: bold;
+        }
+      
+    } 
+    .ourplayer-desc{
+        color:$textColor;
+        margin-bottom: 10px;
+    }
+    .link{
+        color:$mainColor;
+        text-decoration: none;
+    }
+}
+/* end our players*/
+/* start lorem*/
+.lorem{
+    .lorem-box{
+        @media #{$maxMobile}{
+            width:100%;
+        }
+        padding: 15px;
+        float: $float-left;
+        width: (100%/3);
+        img{
+            max-width: 100%;
+            border-radius: 10px;
+           
+        }
+    }
+   
+}
+/*end lorem*/

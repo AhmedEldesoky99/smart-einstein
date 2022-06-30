@@ -1,0 +1,87 @@
+/* start header*/
+.header {
+  padding: 10px 0;
+  overflow: hidden;
+  border-bottom: 1px solid $textColor;
+  .logo {
+    position: relative;
+    width: 30%;
+    float: $float-left;
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+    @media #{$minMeduim} {
+      width: 30%;
+      float: $float-left;
+      text-align: $text-left;
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+    p {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      color: $textColor;
+    }
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: $mainColor;
+    border-radius: 15px;
+    display: none;
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      margin-top: 7px;
+      display: block;
+    }
+    @media #{$minMeduim} {
+      width: 70%;
+      float: $float-left;
+    }
+    @media #{$maxMobile} {
+      clear: both;
+      text-align: center;
+    }
+    li {
+      @media #{$maxMobile} {
+        display: block;
+        width: 100%;
+        text-align: $text-left;
+        float: $float-left;
+        padding-left: 15px;
+        padding-right: 15px;
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #000;
+        }
+      }
+
+      width: 20%;
+      padding: 15px 0;
+      float: $float-left;
+      font-size: 18px;
+      text-align: center;
+      @media #{$maxMobile} {
+        float: none;
+        display: block;
+      }
+      a {
+        font-size: 18px;
+        margin-top: -14px;
+        display: block;
+        padding: 10px 0px;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: #ddd;
+        }
+      }
+    }
+  }
+}
+/* end header*/

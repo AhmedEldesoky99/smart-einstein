@@ -1,0 +1,43 @@
+//add overlay
+@mixin overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+//add auto prefex
+@mixin prefixer($property ,$value, $prefixes :()){
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-'+ $property}:$value;   
+    }
+    #{$property} : $value;
+
+}
+//add animation prefexes
+@mixin kayFrame($anmimation-name) {
+    @-webkit-keyframes #{$anmimation-name}{
+        @content;
+    }
+    @-moz-keyframes #{$anmimation-name}{
+        @content;
+    }
+    @keyframes #{$anmimation-name}{
+        @content;
+    }
+    
+}
+//opacity IE
+@mixin opacity($value){
+    zoom : 1;
+    $opacitt-IE : $value * 100;
+    filter: alpha(opacity = $opacitt-IE);
+    opacity: $value;
+}
+// transition
+@mixin transition($args...){
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}

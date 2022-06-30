@@ -1,0 +1,53 @@
+body {
+    background-color: #000;
+    font: {
+        family: tahoma;
+        size: 16px;
+    }
+}
+.fa{
+    padding-right: 8px !important;
+    padding-top: 35px !important;
+    font-size: 35px !important;
+}
+h2,i{color:white;}
+
+.headBorder{
+    margin-top: 40px;
+   position: relative;
+   h2{
+    color:#fff;
+    background-color: $mainColor;
+    padding:10px 15px;
+    max-width: 300px;
+    margin :30px auto;
+    border-radius:15px;
+    text-transform: capitalize;
+    text-align: center;
+    &:before{
+        content: '';
+        width:100%;
+        height: 1.5;
+        background-color: #000;
+        position: absolute;
+        top:50%;
+        left:0;
+        z-index: -1;
+    }
+   }
+}
+.myP{
+    font:{
+        size:26px;
+        weight:200;
+        family:arial ,tahoma;
+    }
+    color: #a7a7a7;
+    margin: 20px auto;
+    line-height: 1.6;
+    text-align: center;
+    width:90%;
+}
+.myPadding {
+    padding:40px 0;
+}

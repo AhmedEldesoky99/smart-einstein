@@ -1,0 +1,41 @@
+.main-btn {
+  background-color: rgba(#000, 0.8);
+  color: white;
+  display: block;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  max-width: 150px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background-color: #000;
+  }
+}
+.theToggler {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  display: none;
+  top: 25px;
+  left: 280%;
+  cursor: pointer;
+  border-radius: 5px;
+  @media #{$maxMobile} {
+    display: block;
+  }
+  span {
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin: 7px 0px;
+    background-color: $mainColor;
+    border: none;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
